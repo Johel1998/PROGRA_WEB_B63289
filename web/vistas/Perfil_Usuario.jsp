@@ -1,7 +1,7 @@
 <%-- 
     Document   : Perfil_Usuario
     Created on : Jul 9, 2019, 4:25:26 PM
-    Author     : Ana Elena
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 

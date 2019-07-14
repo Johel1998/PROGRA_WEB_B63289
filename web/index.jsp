@@ -1,7 +1,7 @@
 <%-- 
-    Document   : CAZUUU
+    Document   : Index
     Created on : 05/07/2019, 05:30:00 PM
-    Author     : JOHEL
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

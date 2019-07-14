@@ -1,7 +1,7 @@
 <%-- 
     Document   : verInformacion
     Created on : Jul 12, 2019, 4:57:55 PM
-    Author     : Ana Elena
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 <%@page import="java.util.Iterator"%>

@@ -1,7 +1,7 @@
 <%-- 
     Document   : Register
     Created on : 05/07/2019, 06:22:36 PM
-    Author     : JOHEL
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

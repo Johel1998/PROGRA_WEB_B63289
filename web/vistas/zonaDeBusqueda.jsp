@@ -1,7 +1,7 @@
 <%-- 
     Document   : ZonaDeBusqueda
     Created on : 05/07/2019, 06:26:36 PM
-    Author     : JOHEL
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 <%@page import="listaDAO.Lista_Usuarios_DAO"%>

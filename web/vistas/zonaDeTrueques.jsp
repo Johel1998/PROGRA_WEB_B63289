@@ -1,7 +1,7 @@
 <%-- 
     Document   : ZonaDeTrueques
     Created on : 05/07/2019, 06:26:50 PM
-    Author     : JOHEL
+    Author     : Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
 --%>
 
 <%@page import="java.util.Iterator"%>

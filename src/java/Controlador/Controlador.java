@@ -1,6 +1,5 @@
 package Controlador;
 
-import DAO.Interface_ArticuloDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -16,8 +15,9 @@ import modelo.Trueque;
 import modelo.Usuario;
 
 /**
- *
- * @author JOHEL
+ *Esta clase funge como un controlador de las ventanas en el la pagina web
+ * @author Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
+ * @version 11/07/19
  */
 //@WebServlet(name = "Controlador", urlPatterns = {"/Controlador"})
 public class Controlador extends HttpServlet {
@@ -146,10 +146,6 @@ public class Controlador extends HttpServlet {
             case "zonaTrueques":
                 acceso = zonaTrueques;
                 break;
-//            case "informacion":
-//                request.setAttribute("codigoProducto", request.getParameter("codigo"));
-//                acceso = verInformacion;
-//                break;
             case "ofrecerArticulo":
                 int codigoOfertante = Integer.parseInt(request.getParameter("codigo"));
                 int codigoRecibidor = Integer.parseInt(request.getParameter("codigo2"));
@@ -203,5 +199,4 @@ public class Controlador extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

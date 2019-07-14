@@ -7,8 +7,8 @@ import java.util.List;
 import modelo.Articulo;
 
 /**
- *
- * @author JOHEL
+ * Esta clase representa una lista de articulos
+ * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
  */
 public class Lista_De_Articulos_DAO implements Interface_ArticuloDAO {
 
@@ -28,6 +28,11 @@ public class Lista_De_Articulos_DAO implements Interface_ArticuloDAO {
         return instance;
     }
 
+    /**
+     * Este metodo es implementado de la interfaz y agrega un articulo en la lista, al igual que
+     * aumenta el codigo del articulo
+     * @param articulo articulo que se insertara en la lista
+     */
     @Override
     public void insertar(Articulo articulo) {
         articulo.setCodigo(codigoArticulo);
@@ -35,11 +40,20 @@ public class Lista_De_Articulos_DAO implements Interface_ArticuloDAO {
         listaDeArticulos.add(articulo);
     }
 
+    /**
+     * Este metodo es implementado de la interfaz y elimina un articulo en la lista
+     * @param articulo articulo que se eliminara en la lista
+     */
     @Override
     public void eliminar(Articulo articulo) {
         listaDeArticulos.remove(articulo);
     }
 
+    /**
+     * Este metodo busca un articulo de acuerdo a su respectivo codigo
+     * @param codigoDelArticulo el codigo del articulo que se desea buscar
+     * @return retorna el articulo si se encuentra, si no retorna null
+     */
     @Override
     public Articulo buscarArticuloPorCodigo(int codigoDelArticulo) {
         Iterator itr = listaDeArticulos.iterator();
@@ -52,11 +66,20 @@ public class Lista_De_Articulos_DAO implements Interface_ArticuloDAO {
         return null;
     }
 
+    /**
+     * Metodo que sirve para obtener la lista de los articulos 
+     * @return retorna la lista de los articulos
+     */
     @Override
     public List<Articulo> getListaArticulos() {
         return listaDeArticulos;
     }
 
+    /**
+     * Metodo que obtiene los articulos de un usuario en especifico
+     * @param usuario nombre del usuario
+     * @return retorna su lista de articulos
+     */
     @Override
     public List<Articulo> getUsuario(String usuario) {
         Iterator itr = listaDeArticulos.iterator();

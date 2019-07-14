@@ -4,8 +4,9 @@ import java.util.List;
 import modelo.Trueque;
 
 /**
- *
- * @author JOHEL
+ *Esta clase representa la interfaz de trueques con sus respectivos metodos
+ * @author Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
+ * @version 10/07/19
  */
 public interface Interface_TruequeDAO {
     public void agregarTrueque(Trueque trueque);

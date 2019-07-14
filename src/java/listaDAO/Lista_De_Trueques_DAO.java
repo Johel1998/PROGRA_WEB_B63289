@@ -71,7 +71,7 @@ public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
      * @return la lista de los trueques
      */
     @Override
-    public List<Trueque> listarMisTrueques(String nombreUsuario) {
+    public List<Trueque> getMisTrueques(String nombreUsuario) {
         Iterator itr = listaDeTrueques.iterator();
         List<Trueque> susTrueques = new ArrayList<>();
         while (itr.hasNext()) {
@@ -98,7 +98,7 @@ public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
      * @return la lista de trueques
      */
     @Override
-    public List<Trueque> listaDeTruequesSolicitados(String nombreUsuario) {
+    public List<Trueque> getTruequesQueMeSolicitaron(String nombreUsuario) {
      Iterator it = listaDeTrueques.iterator();
         List<Trueque> tusTrueques = new ArrayList<>();
         while (it.hasNext()) {

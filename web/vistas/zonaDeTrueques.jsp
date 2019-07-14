@@ -30,7 +30,7 @@
             </thead>
             <%
                 String usuario = (String) session.getAttribute("nombreActual");
-                List<Trueque> listaTrueques = Lista_De_Trueques_DAO.getInstance().listarMisTrueques(usuario);
+                List<Trueque> listaTrueques = Lista_De_Trueques_DAO.getInstance().getMisTrueques(usuario);
                 Iterator<Trueque> itr = listaTrueques.iterator();
                 Trueque trueque = null;
                 while(itr.hasNext()){
@@ -60,7 +60,7 @@
             </thead>
             <%
                 
-                List<Trueque> list2 = Lista_De_Trueques_DAO.getInstance().listaDeTruequesSolicitados(usuario);
+                List<Trueque> list2 = Lista_De_Trueques_DAO.getInstance().getTruequesQueMeSolicitaron(usuario);
                 Iterator<Trueque> itr2 = list2.iterator();
                 Trueque trueque2 = null;
                 while (itr2.hasNext()) {

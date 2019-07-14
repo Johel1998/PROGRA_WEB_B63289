@@ -5,6 +5,7 @@ import java.awt.Image;
 /**
  * Esta clase representa un articulo
  * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
+ * @version 08/07/19
  */
 public class Articulo {
     private String propietarioDelArticulo;

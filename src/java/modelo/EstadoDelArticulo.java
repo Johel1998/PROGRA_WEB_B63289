@@ -3,6 +3,7 @@ package modelo;
 /**
  * Esta clase sirve para cambiar y ver los estados de los articulos
  * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
+ * @version 09/07/19
  */
 public class EstadoDelArticulo {
     private String descripcion = "pendiente";

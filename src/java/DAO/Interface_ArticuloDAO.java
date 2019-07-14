@@ -6,8 +6,9 @@ import java.util.TreeMap;
 import modelo.Articulo;
 
 /**
- *
- * @author JOHEL
+ * Esta clase obtiene los metodos que seran implementados en la lista de Articulos
+ * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
+ * @version 10/07/19
  */
 public interface Interface_ArticuloDAO {
     public void insertar(Articulo articulo);

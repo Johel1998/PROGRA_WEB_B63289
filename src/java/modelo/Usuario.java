@@ -3,6 +3,7 @@ package modelo;
 /**
  * Esta clase representa un usuario
  * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
+ * @version 08/07/19
  */
 public class Usuario {
     private String nombre;

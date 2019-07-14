@@ -9,6 +9,7 @@ import modelo.Articulo;
 /**
  * Esta clase representa una lista de articulos
  * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
+ * @version 11/07/19
  */
 public class Lista_De_Articulos_DAO implements Interface_ArticuloDAO {
 

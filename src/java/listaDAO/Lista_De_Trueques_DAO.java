@@ -7,8 +7,9 @@ import java.util.List;
 import modelo.Trueque;
 
 /**
- *
- * @author JOHEL
+ *Esta clase funge como una lista de usuarios 
+ * @author Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
+ * @version 13/07/19
  */
 public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
     public List<Trueque> listaDeTrueques;
@@ -27,18 +28,31 @@ public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
         return instance;
     }
     
+    /**
+     * Metodo que agrega un nuevo trueque a la lista 
+     * @param nuevoTrueque trueque agregado
+     */
     @Override
     public void agregarTrueque(Trueque nuevoTrueque) {
         nuevoTrueque.setCodigoTrueque(codigoDelTrueque);
         codigoDelTrueque++;
         listaDeTrueques.add(nuevoTrueque);
     }
-
+    
+    /**
+     * Metodo que elimina el trueque de la lista
+     * @param truequeEliminado que se desea eliminar
+     */
     @Override
     public void eliminarTrueque(Trueque truequeEliminado) {
      listaDeTrueques.remove(truequeEliminado);
     }
-
+    
+    /**
+     * Metodo que busca por codigo en la lista
+     * @param codigoDelTrueque que se desea encontra con base al trueque
+     * @return el trueque con el que se coincidio
+     */
     @Override
     public Trueque buscarPorCodigo(int codigoDelTrueque) {
         Iterator itr = listaDeTrueques.iterator();
@@ -50,7 +64,12 @@ public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
         }
         return null;
     }
-
+    
+    /**
+     * Metodo que muestra los trueques que se han hecho 
+     * @param nombreUsuario usuario por el que se desea buscar los trueques
+     * @return la lista de los trueques
+     */
     @Override
     public List<Trueque> listarMisTrueques(String nombreUsuario) {
         Iterator itr = listaDeTrueques.iterator();
@@ -63,12 +82,21 @@ public class Lista_De_Trueques_DAO implements Interface_TruequeDAO{
         }
         return susTrueques;
     }
-
+        
+    /**
+     * Metodo que devuelve la lista de trueques
+     * @return la lista de trueques
+     */
     @Override
     public List<Trueque> getListaTrueques() {
      return listaDeTrueques;
     }
-
+    
+    /**
+     * Metodo que muestra la lista de trueques solicitados 
+     * @param nombreUsuario nombre por el cual se va a buscar los trueques
+     * @return la lista de trueques
+     */
     @Override
     public List<Trueque> listaDeTruequesSolicitados(String nombreUsuario) {
      Iterator it = listaDeTrueques.iterator();

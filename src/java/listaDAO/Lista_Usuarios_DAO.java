@@ -7,8 +7,9 @@ import java.util.List;
 import modelo.Usuario;
 
 /**
- *
- * @author JOHEL
+ *Esta clase funge como una lista de usuarios 
+ * @author Joel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias Gutierrez
+ * @version 12/07/19
  */
 public class Lista_Usuarios_DAO implements Interface_UsuarioDAO{
     private static Lista_Usuarios_DAO instance;
@@ -25,21 +26,38 @@ public class Lista_Usuarios_DAO implements Interface_UsuarioDAO{
         return instance;
     }
     
+    /**
+     * Metodo que inserta un usuario a la lista de usuarios
+     * @param usuario usuario insertado
+     */
     @Override
     public void insertar(Usuario usuario) {
       listaDeUsuarios.add(usuario);
     }
-
+    
+    /**
+     * Elimina un usuario de la lista
+     * @param usuario eliminado
+     */
     @Override
     public void eliminar(Usuario usuario) {
         listaDeUsuarios.remove(usuario);
     }
-
+    
+    /**
+     * Metodo que obtiene la lista de usuarios 
+     * @return la lista de usuarios
+     */
     @Override
     public List<Usuario> getListaUsuarios() {
      return listaDeUsuarios;
     }
-
+    
+    /**
+     * Metodo que busca en la lista por correo del usuario
+     * @param correo del usuario
+     * @return el usuario encontrado
+     */
     @Override
     public Usuario buscar(String correo) {
         Iterator itr = listaDeUsuarios.iterator();
@@ -51,7 +69,13 @@ public class Lista_Usuarios_DAO implements Interface_UsuarioDAO{
         }
         return null;
     }
-
+    
+    /**
+     * Metodo que busca en la lista de usuarios si existe un correo con su misma contraseña
+     * @param correo del usuario
+     * @param password contraseña del usuario
+     * @return un booleano en caso de que exista los datos
+     */
     @Override
     public boolean login(String correo, String password) {
       return buscar(correo).getPassword().equals(password);

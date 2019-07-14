@@ -1,8 +1,8 @@
 package modelo;
 
 /**
- *
- * @author Ana Elena
+ * Esta clase representa un usuario
+ * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
  */
 public class Usuario {
     private String nombre;

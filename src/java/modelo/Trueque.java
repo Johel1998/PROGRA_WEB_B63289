@@ -1,8 +1,8 @@
 package modelo;
 
 /**
- *
- * @author JOHEL
+ * Esta clase representa un trueque
+ * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
  */
 public class Trueque {
     private String nombreDelOfertante;

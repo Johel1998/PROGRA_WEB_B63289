@@ -3,8 +3,8 @@ package modelo;
 import java.awt.Image;
 
 /**
- *
- * @author JOHEL
+ * Esta clase representa un articulo
+ * @author Johel Guzman Soto, Ana Elena Morales Venegas, Keylor Arias
  */
 public class Articulo {
     private String propietarioDelArticulo;
